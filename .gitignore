@@ -1,5 +1,8 @@
 *
 !.gitignore
+!README*
 !_*rc
 !.*rc
+!vimfiles
+vimfiles/bundle/
 
