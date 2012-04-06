@@ -39,6 +39,3 @@ call vundle#rc()
 
 filetype plugin indent on
 
-"Windowsを最大化して起動
-au GUIEnter * simalt ~x
-

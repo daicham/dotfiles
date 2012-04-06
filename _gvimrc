@@ -1,0 +1,3 @@
+"Windowsを最大化して起動
+au GUIEnter * simalt ~x
+
