@@ -1,8 +1,10 @@
 *
 !.gitignore
+!.gitconfig
 !README*
 !_*rc
 !.*rc
 !vimfiles
 vimfiles/bundle/
+vimfiles/vundle.git/
 
