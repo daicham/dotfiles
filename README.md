@@ -11,7 +11,7 @@ dotfiles
 
 ### Setup vundle
 
-[vundler](https://github.com/gmarik/vundle) is vim plugin manager.
+[vundle](https://github.com/gmarik/vundle) is vim plugin manager.
 
 1. Install vundle:
 
