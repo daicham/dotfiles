@@ -33,6 +33,7 @@ set tabstop=2
 set statusline=%f%m%r\ [%{&fenc!=''?&fenc:&enc}][%{&ff}]
 
 "vundler設定
+filetype on "for OSX
 filetype off
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
