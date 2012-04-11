@@ -14,5 +14,13 @@ for f in `ls -1a | grep rc`; do
   fi
 done
 
+target=~/.vim
+if [ -d ${target} -o -h ${target} ] ; then
+  echo "${target} is already exists."
+else
+  ln -s ${DIR}/vimfiles ${target}
+  echo "${target} is created." 
+fi
+
 cd ${PWD}
 
