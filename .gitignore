@@ -7,4 +7,5 @@
 !vimfiles
 vimfiles/bundle/
 vimfiles/vundle.git/
+!setup.sh
 
