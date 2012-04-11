@@ -37,6 +37,8 @@ filetype on "for OSX
 filetype off
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
+"from github
+Bundle 'mattn/zencoding-vim'
 
 filetype plugin indent on
 
