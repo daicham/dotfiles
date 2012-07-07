@@ -4,13 +4,14 @@ PWD=`pwd`
 cd `dirname $0`
 DIR=`pwd`
 
-for f in `ls -1a | grep rc`; do
-  target=~/${f/_/.} # for vim on windows
-  if [ -f ${target} -o -h ${target} ] ; then
-    echo "${target} is already exists."
+files=".bashrc .gitconfig .hgrc"
+
+for f in ${files}; do
+  if [ -f ${f} -o -h ${f} ] ; then
+    echo "${f} is already exists."
   else
-    ln -s ${DIR}/${f} ${target}
-    echo "${target} is created." 
+    ln -s ${DIR}/${f} ${f}
+    echo "${DIR}/${f} is created." 
   fi
 done
 
