@@ -26,3 +26,6 @@ useother = resolve --tool internal:other
 [diff]
 git = True
 
+[mq]
+secret = True
+
