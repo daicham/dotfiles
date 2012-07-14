@@ -1,27 +1,27 @@
 #!/bin/bash
 
-PWD=`pwd`
-cd `dirname $0`
-DIR=`pwd`
+DOTFILES_DIR=$(cd $(dirname $0);pwd)
 
-files=".bashrc .gitconfig .hgrc"
-
-for f in ${files}; do
-  if [ -f ${f} -o -h ${f} ] ; then
-    echo "${f} is already exists."
+function createSymLink
+{
+  src=${DOTFILES_DIR}/$1
+  if [ $# -eq 1 ] ; then
+    dest=${HOME}/$1
   else
-    ln -s ${DIR}/${f} ${f}
-    echo "${DIR}/${f} is created." 
+    dest=${HOME}/$2
   fi
-done
+  if [ -f ${dest} -o -h ${dest} ] ; then
+    echo "${dest} is already exists."
+  else
+    ln -s ${src} ${dest}
+    echo "${dest} was created."
+  fi
+}
 
-target=~/.vim
-if [ -d ${target} -o -h ${target} ] ; then
-  echo "${target} is already exists."
-else
-  ln -s ${DIR}/vimfiles ${target}
-  echo "${target} is created." 
-fi
-
-cd ${PWD}
+createSymLink .bashrc
+createSymLink .gitconfig
+createSymLink .hgrc
+createSymLink _vimrc .vimrc
+createSymLink _gvimrc .gvimrc
+createSymLink vimfiles .vim
 
