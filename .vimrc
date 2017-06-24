@@ -32,13 +32,3 @@ set tabstop=2
 "・ファイルの改行コード(%{&ff})
 set statusline=%f%m%r\ [%{&fenc!=''?&fenc:&enc}][%{&ff}]
 
-"vundler設定
-filetype on "for OSX
-filetype off
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
-"from github
-Bundle 'mattn/zencoding-vim'
-
-filetype plugin indent on
-
