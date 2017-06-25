@@ -11,3 +11,6 @@
 	di = diff
 	l = log --graph
 	hist = log --pretty=format:'[%ad] %h %an : %s' --graph --date=short
+[core]
+	autocrlf = input
+	safecrlf = true
