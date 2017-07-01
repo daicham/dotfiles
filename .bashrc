@@ -6,5 +6,8 @@ alias v=vagrant
 alias d=docker
 alias dm=docker-machine
 
-PS1='\[\e[34m\]\w\] \[\e[37m\]\$\e[0m\] '
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+source ~/.git-prompt.sh
+PS1='\[\e[33m\]\w\]\[\e[32m\]$(__git_ps1 " (%s)")\[\e[0m\] $ '
 

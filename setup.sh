@@ -17,4 +17,5 @@ function createSymLink
 createSymLink .bashrc
 createSymLink .gitconfig
 createSymLink .vimrc
+createSymLink .git-prompt.sh
 
