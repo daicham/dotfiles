@@ -1,7 +1,5 @@
 "utf-8
 set encoding=utf-8
-"オートインデント
-set autoindent
 "クリップボードをWindowsと同期
 set clipboard=unnamed
 "vi互換をオフ
