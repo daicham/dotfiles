@@ -6,6 +6,7 @@ alias prune_gone_local_branches="g br -vv|grep gone]|grep -v ^\*|awk '{print \$1
 alias v=vagrant
 alias d=docker
 alias dm=docker-machine
+alias s='ssh $(grep "^Host " ~/.ssh/config|awk "{print \$2;}"|peco)'
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
