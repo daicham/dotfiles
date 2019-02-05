@@ -14,8 +14,20 @@ function createSymLink
   fi
 }
 
+function copyFile
+{
+  src=${DOTFILES_DIR}/$1
+  dest=${HOME}/$2
+  if [ -f ${dest} ] ; then
+    echo "${dest} is already exists."
+  else
+    cp ${src} ${dest}
+    echo "${dest} was created."
+  fi
+}
+
 createSymLink .bashrc
 createSymLink .gitconfig
 createSymLink .vimrc
 createSymLink .git-prompt.sh
-
+copyFile .bash_profile.org .bash_profile
