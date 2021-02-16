@@ -16,3 +16,5 @@ brew install homebrew/cask/docker
 brew install visual-studio-code
 brew install homebrew/cask-versions/sequel-pro-nightly
 brew install peco
+brew install anyenv
+brew install yarn

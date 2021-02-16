@@ -33,3 +33,5 @@ createSymLink .git-prompt.sh
 copyFile .bash_profile.org .bash_profile
 
 createSymLink .zshrc
+
+echo '***** Setup completed. Type `exec $SHELL -l` to reload your profile *****'
