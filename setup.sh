@@ -31,3 +31,5 @@ createSymLink .gitconfig
 createSymLink .vimrc
 createSymLink .git-prompt.sh
 copyFile .bash_profile.org .bash_profile
+
+createSymLink .zshrc
