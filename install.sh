@@ -3,6 +3,7 @@
 
 brew install cask
 
+brew install git
 brew install 1password
 brew install google-chrome
 brew install google-japanese-ime
