@@ -11,5 +11,6 @@
 	di = diff
 	l = log --graph
 	hist = log --pretty=format:'[%ad] %h %an : %s' --graph --date=short
+	sco = sparse-checkout
 [core]
 	autocrlf = input
